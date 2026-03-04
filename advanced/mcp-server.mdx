@@ -30,7 +30,7 @@ Claud Octopus implements an MCP server that delegates to `orchestrate.sh`, prese
 ┌─────────────────────────────────────────────────────────┐
 │                  MCP Server (Node.js)                   │
 │  ┌──────────────────────────────────────────────────┐   │
-│  │  Tool Registry (10 tools)                        │   │
+│  │  Tool Registry (11 tools)                        │   │
 │  │  - octopus_discover, octopus_define, etc.        │   │
 │  └──────────────────────┬───────────────────────────┘   │
 │                         │                               │
@@ -56,7 +56,7 @@ Claud Octopus implements an MCP server that delegates to `orchestrate.sh`, prese
 1. Claude Code reads `.mcp.json` on plugin load
 2. Spawns MCP server: `node mcp-server/dist/index.js`
 3. Server initializes stdio transport
-4. Registers 10 tools with MCP SDK
+4. Registers 11 tools with MCP SDK
 5. Loads skill metadata from `.claude/skills/*.md`
 6. Sends `server/initialized` message to client
 7. Client can now invoke tools
@@ -85,7 +85,7 @@ The `.mcp.json` file tells Claude Code how to launch the server:
 - **Environment**: `CLAUDE_OCTOPUS_MCP_MODE=true` signals MCP execution context
 - **Transport**: stdio (stdin/stdout) — no network ports required
 
-## 10 exposed tools
+## 11 exposed tools
 
 The MCP server registers these tools (see full API in [OpenClaw integration](/advanced/openclaw)):
 

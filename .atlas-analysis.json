@@ -104,7 +104,7 @@
     "/octo:doctor - Environment diagnostics",
     "/octo:claw - OpenClaw admin",
     "orchestrate.sh - Core orchestration script",
-    "MCP Server - 10 exposed tools",
+    "MCP Server - 11 exposed tools",
     "Persona system - 33 specialized agents",
     "Hook system - Extensible lifecycle hooks"
   ]
